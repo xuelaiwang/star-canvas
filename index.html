@@ -10,41 +10,39 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/jquery.fullPage.css">
     <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <!--    首页的样式-->
-    <link rel="stylesheet" href="css/index.css?ssssssssssss">
+    <link rel="stylesheet" href="css/index.css?ssss222222222222ssssssss">
     <script src="js/svga.min.js"></script>
 </head>
 <body>
-<div class="header w1200">
+<div class="header head_fixed w1200">
     <div class="header-container clearfix">
         <div class="header-left">
             <img src="./image/qxlogo.png" alt="轻校logo">
         </div>
         <div class="header-right">
-            <div class="header-free">免费使用7天</div>
-            <div class="header-free">机构登录</div>
+            <a class="header-free" href="https://www.baidu.com" target="_blank">免费使用7天</a>
+            <a class="header-free businesslogin" href="https://www.baidu.com" target="_blank">机构登录</a>
             <ul class="nav">
                 <li><a href="#about" id="about">关于我们</a></li>
             </ul>
         </div>
     </div>
-
 </div>
 <div id="dowebok">
-    <div class="section active">
+    <div class="section sectiona active selected">
         <div class="plate-one">
-            <div class="wrapper-one clearfix">
-                <div class="wrapper-one-left">
-                    <h2>一站式教务管理,全方位用户服务</h2>
-                    <p style="margin-bottom: 23px">立足于教培机构教务场景打造的数字化管理系统。</p>
-                    <p>解决机构办学管理难题，实现数字化升级。</p>
-                </div>
-                <div class="wrapper-one-right" id="svg_one"></div>
+            <div class="wrapper-one-left">
+                <h2>一站式教务管理,全方位用户服务</h2>
+                <p style="margin-bottom: 20px">立足于教培机构教务场景打造的数字化管理系统。</p>
+                <p>解决机构办学管理难题，实现数字化升级。</p>
             </div>
+            <div class="wrapper-one-right" id="svg_one"></div>
             <img class="banner-top" src="image/banner_1.png" alt="">
         </div>
     </div>
-    <div class="section">
+    <div class="section sectionb ">
         <div class="w1200">
             <div class="common-title">
                 <h2>了解轻校</h2>
@@ -53,83 +51,76 @@
             <p class="realize-desc">让家校沟通零距离。打造高效家校服务平台，从家校在线沟通，老师移动办公方面提高家校沟通效率，塑造口碑服务。</p>
             <p class="realize-desc">全方位立体式服务从系统安装,到后期升级,从一而终的为用户提供最全面的贴心服务,24小时跟踪反馈,确保用户正常使用。</p>
             <div class="know-list">
-                <div class="know-item">
+                <div class="know-item know-item1">
                     <div class="know-item-svg" id="know_svg1"></div>
                     <p>课程设置，班级管理，智能课，排课时段查询，排课资源冲突检测</p>
                 </div>
-                <div class="know-item">
+                <div class="know-item know-item2">
                     <div class="know-item-svg" id="know_svg2"></div>
                     <p>学生档案管理，到校离校消息推送，学生上课考勤管理，学生异动管理，学生成绩管理，学员积分管理</p>
                 </div>
-                <div class="know-item">
+                <div class="know-item know-item3">
                     <div class="know-item-svg" id="know_svg3"></div>
                     <p>打造高效家校服务平台，老师移动办公方面提高家校沟通效率，塑造口碑服务。</p>
                 </div>
             </div>
         </div>
     </div>
-    <div class="section">
+    <div class="section sectionc">
         <div class="plate-three w1200">
-            <div class="three-wrapper">
-                <div class="three-content show">
-                    <div class="three-content-left">
-                        <img src="image/four_1.png" alt="">
+            <div class="three-wrapper clearfix">
+                <div class="three-content clearfix">
+                    <div class="three-content-left clearfix">
+                        <img src="image/four_1.png" class="show" alt="">
+                        <img src="image/four_2.png" class="hide" alt="">
+                        <img src="image/four_3.png" class="hide" alt="">
                     </div>
                     <div class="three-content-right">
-                        <h3>家校通</h3>
-                        <p class="edu-tip">会招生的家校互动系统</p>
-                        <h4>三大作业模式</h4>
-                        <div class="three-content-title">作业打卡</div>
-                        <p class="three-content-desc">老师编辑打卡主题内容，合理设置发布时间以及打卡时间段，</p>
-                        <p class="three-content-desc" style="margin-bottom: 30px"> 并且还能定时通知学员打卡。</p>
+                        <div class="themedesc show">
+                            <h3>家校通</h3>
+                            <p class="edu-tip">会招生的家校互动系统</p>
+                            <h4>三大作业模式</h4>
+                            <div class="three-content-title">作业打卡</div>
+                            <p class="three-content-desc">老师编辑打卡主题内容，合理设置发布时间以及打卡时间段，</p>
+                            <p class="three-content-desc" style="margin-bottom: 30px"> 并且还能定时通知学员打卡。</p>
+                        </div>
+                        <div class="themedesc hide">
+                            <h3>家校通</h3>
+                            <p class="edu-tip">会招生的家校互动系统</p>
+                            <h4>三大作业模式</h4>
+                            <div class="three-content-title">日历打卡</div>
+                            <p class="three-content-desc">只需编辑一次主题，完成设定主题打周期，以及每日打卡
+                            </p>
+                            <p class="three-content-desc" style="margin-bottom: 30px"> 时间规则等个性化设置，系统即可每天自动发布打卡主题。</p>
+                        </div>
+                        <div class="themedesc hide">
+                            <h3>家校通</h3>
+                            <p class="edu-tip">会招生的家校互动系统</p>
+                            <h4>三大作业模式</h4>
+                            <div class="three-content-title">闯关打卡</div>
+                            <p class="three-content-desc">可以设置各种主题内容，以及闯关规则等个性化设置，让</p>
+                            <p class="three-content-desc" style="margin-bottom: 30px">学生在轻松闯关的过程中就能完成课程任务。</p>
+                        </div>
+                        <div class="three-tab clearfix">
+                            <div class="tab-item tab-active">
+                                <div class="tab-item-img1"></div>
+                                <span class="tab-item-tip1">作业打卡</span>
+                            </div>
+                            <div class="tab-item">
+                                <div class="tab-item-img2"></div>
+                                <span class="tab-item-tip2">日历打卡</span>
+                            </div>
+                            <div class="tab-item">
+                                <div class="tab-item-img3"></div>
+                                <span class="tab-item-tip3">闯关打卡</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="three-content">
-                    <div class="three-content-left">
-                        <img src="image/four_2.png" alt="">
-                    </div>
-                    <div class="three-content-right">
-                        <h3>家校通</h3>
-                        <p class="edu-tip">会招生的家校互动系统</p>
-                        <h4>三大作业模式</h4>
-                        <div class="three-content-title">日历打卡</div>
-                        <p class="three-content-desc">只需编辑一次主题，完成设定主题打周期，以及每日打卡
-                        </p>
-                        <p class="three-content-desc" style="margin-bottom: 30px"> 时间规则等个性化设置，系统即可每天自动发布打卡主题。</p>
-                    </div>
-
-                </div>
-                <div class="three-content">
-                    <div class="three-content-left">
-                        <img src="image/four_3.png" alt="">
-                    </div>
-                    <div class="three-content-right">
-                        <h3>家校通</h3>
-                        <p class="edu-tip">会招生的家校互动系统</p>
-                        <h4>三大作业模式</h4>
-                        <div class="three-content-title">闯关打卡</div>
-                        <p class="three-content-desc">可以设置各种主题内容，以及闯关规则等个性化设置，让</p>
-                        <p class="three-content-desc" style="margin-bottom: 30px">学生在轻松闯关的过程中就能完成课程任务。</p>
-                    </div>
-                </div>
-            </div>
-            <div class="three-tab">
-                <div class="tab-item tab-active">
-                    <div class="tab-item-img1"></div>
-                    <span class="tab-item-tip1">作业打卡</span>
-                </div>
-                <div class="tab-item">
-                    <div class="tab-item-img2"></div>
-                    <span class="tab-item-tip2">日历打卡</span>
-                </div>
-                <div class="tab-item">
-                    <div class="tab-item-img3"></div>
-                    <span class="tab-item-tip3">闯关打卡</span>
                 </div>
             </div>
         </div>
     </div>
-    <div class="section">
+    <div class="section sectiond">
         <div class="plate-four w1200">
             <div class="plate-four-wrap">
                 <div class="plate-item">
@@ -169,7 +160,7 @@
 
         </div>
     </div>
-    <div class="section">
+    <div class="section sectione">
        <div class="plate-five ">
            <div class="plate-five-wrap w1200">
                <h2>内容招生新模式</h2>
@@ -260,7 +251,7 @@
             </div>
         </div>
     </div>
-    <div class="section" id="#about">
+    <div class="section sectiong" id="#about">
         <div class="about-wrap" >
             <div class="w1200">
                 <div class="intro">
@@ -288,7 +279,7 @@
                         <img src="image/d1.png" alt=""><span>7*12小时客服支持</span>
                     </div>
                     <div class="one-item">
-                        <img src="image/d2.png" alt=""><span>免费使用，0成本</span>
+                        <img src="image/d2.png" alt=""><span>免费试用，0成本</span>
                     </div>
                     <div class="one-item">
                         <img src="image/d3.png" alt=""><span>数据采集，实时跟踪</span>
@@ -300,7 +291,6 @@
                 <div class="footer-link">
                     <a class="link-item" href="">首页</a>
                     <a class="link-item" href="">帮助中心</a>
-                    <a class="link-item" href="">关于我们</a>
                     <a class="link-external" href="">商家岛</a>
                 </div>
                 <div class="footer-consult clearfix">
@@ -323,29 +313,94 @@
 </body>
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/jquery.fullPage.min.js"></script>
+<script src="js/jquery.slimscroll.min.js"></script>
 <script src="js/swiper.min.js"></script>
 <script src="js/count.js"></script>
 <script src="js/index.js"></script>
 <script>
     var a = $(function () {
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 5000,
+            },
+            on:{
+                slideChange: function(){
+                    console.log('改变了');
+                },
+            },
+        });
+        if (swiper) {
+            swiper.autoplay.stop();
+        }
         $('#dowebok').fullpage({
-            // anchors: ['1','2','3','4','5','about'],
-            // menu: '#myMenu',
             navigation: true,
             scrollBar: false,
             recordHistory:false,
             lockAnchors:true,
-            // autoScrolling:false, //是否使用插件的滚动方式
+            css3: true,
+            scrollOverflow: true,
             afterRender: function () {
                 $('.header').addClass("head_fixed");
             },
+            onLeave: function(index, nextIndex, direction){
+                switch(nextIndex) {
+                    case 1:
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        break;
+                    case 4:
+                        break;
+                    case 5:
+                        swiper.autoplay.stop();
+                        swiper.slideTo(0);
+                        break;
+                    case 6:
+                        var player2 = new SVGA.Player('#svg_six');
+                        var parser2 = new SVGA.Parser('#svg_six'); // 如果你需要支持 IE6+，那么必须把同样的选择器传给 Parser。
+                        parser2.load('image/logo.svga', function (videoItem) {
+                            player2.loops = 1;
+                            player2.clearsAfterStop = false;
+                            player2.setVideoItem(videoItem);
+                            player2.startAnimation(1);
+                            player2.onFrame((i) => {
+                            if (i >= 78) {
+                                player2.stopAnimation();
+                            }
+                            });
+                        })
+                        break;
+                    case 7:
+                        break;
+                    default:
+                        break;
+                }
+            },
             afterLoad: function(anchorLink, index){
                 var loadedSection = $(this);
-                if(index == 6){
-                    //数字滚动效果
-                    productNumber=function (){
+                $('.section').eq(index - 1).addClass('selected').siblings('.section').removeClass('selected');
+                switch(index) {
+                    case 1:
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        break;
+                    case 4:
+                        break;
+                    case 5:
+                        swiper.autoplay.start();
+                        break;
+                    case 6:
                         var arr = [];
-                        $('#productNumber .count-item').each(function(i, dom) {
+                        (function(){
+                            $('#productNumber .count-item').each(function(i, dom) {
                             var iDom = $(dom).find('b'),
                                 decimals = 0,
                                 sum = iDom.data('sum');
@@ -355,8 +410,15 @@
                                 separator: ','//数字分隔符
                             }));
                             arr[i].start();
-                        });
-                    }();
+                            });
+                        })()
+                        
+                        break;
+                    case 7:
+                        
+                        break;
+                    default:
+                        break;
                 }
             }
         });
@@ -364,6 +426,7 @@
         $('#about').click(function () {
             $.fn.fullpage.moveTo(7);
         })
+        
     });
 </script>
 <script>
@@ -406,21 +469,8 @@
         player8.setVideoItem(videoItem);
         player8.startAnimation();
     })
-    //logo
-    var player2 = new SVGA.Player('#svg_six');
-    var parser2 = new SVGA.Parser('#svg_six'); // 如果你需要支持 IE6+，那么必须把同样的选择器传给 Parser。
-    parser2.load('image/logo.svga', function (videoItem) {
-        player2.setVideoItem(videoItem);
-        player2.startAnimation();
-    })
 </script>
 <script>
-    var swiper = new Swiper('.swiper-container', {
-        spaceBetween: 30,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-    });
+    
 </script>
 </html>
