@@ -161,7 +161,9 @@ html,body {
 .header .header-right {
     float: right;
     display: flex;
+    display: -ms-flexbox; 
     align-items: center;
+    -ms-align-items: center;
     padding-right: 18.7%;
     height: 49px;
 }
@@ -186,7 +188,10 @@ html,body {
     background-color: #19B5FE;
     width: 130px;
     height: 32px;
+    -moz-border-radius: 16px;
+    -webkit-border-radius: 16px;
     border-radius: 16px;
+    behavior: url(PIE.htc);
     font-size: 16px;
     font-weight:400;
     color: #fff;
@@ -335,7 +340,7 @@ html,body {
 .sectiona.active .wrapper-one-left h2{
     animation: selfFadeInUp 0.8s ease-in-out forwards;
 }
-.sectiona.selected .wrapper-one-left p{
+.sectiona.active .wrapper-one-left p{
     animation: selfFadeInUp 0.8s ease-in-out forwards;
 }
 .wrapper-one-left {
@@ -481,19 +486,19 @@ html,body {
     cursor: pointer;
 }
 .three-tab .tab-item  .tab-item-img1{
-    background-image: url(../image/t1.png);
+    background-image: url(https://cdn.img.shangjiadao.cn/qingxiao/webindex/image/t1.png);
     width: 100px;
     height: 100px;
     background-size: 100% 100%;
 }
 .three-tab .tab-item  .tab-item-img2{
-    background-image: url(../image/t2.png);
+    background-image: url(https://cdn.img.shangjiadao.cn/qingxiao/webindex/image/t2.png);
     width: 100px;
     background-size: 100% 100%;
     height: 100px;
 }
 .three-tab .tab-item  .tab-item-img3 {
-    background-image: url(../image/t3.png);
+    background-image: url(https://cdn.img.shangjiadao.cn/qingxiao/webindex/image/t3.png);
     width: 100px;
     background-size: 100% 100%;
     height: 100px;
@@ -530,15 +535,15 @@ html,body {
     color: #24CACC;
 }
 .three-tab .tab-item.tab-active .tab-item-img1{
-    background-image: url(../image/t1_active.png);
+    background-image: url(https://cdn.img.shangjiadao.cn/qingxiao/webindex/image/t1_active.png);
     background-size: 100% 100%;
 }
 .three-tab .tab-item.tab-active .tab-item-img2{
-    background-image: url(../image/t2_active.png);
+    background-image: url(https://cdn.img.shangjiadao.cn/qingxiao/webindex/image/t2_active.png);
     background-size: 100% 100%;
 }
 .three-tab .tab-item.tab-active .tab-item-img3{
-    background-image: url(../image/t3_active.png);
+    background-image: url(https://cdn.img.shangjiadao.cn/qingxiao/webindex/image/t3_active.png);
     background-size: 100% 100%;
 }
 .three-wrapper .three-content {
@@ -1095,4 +1100,152 @@ html,body {
 }
 .footer .copyright p:first-child {
     margin-right: 150px;
+}
+.prices .packagebox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.prices .packagebox .packageitem {
+    width: 380px;
+    height: 760px;
+    border-radius: 10px;
+    overflow: hidden;
+    float: left;
+    margin-right: 70px;
+    cursor: pointer;
+}
+.prices .packagebox .packageitem.typea {
+    box-shadow: 0px 13px 29px 0px rgba(0,196,255,0.2);
+}
+.prices .packagebox .packageitem.typeb {
+    box-shadow: 0px 13px 29px 0px  rgba(228,192,134,0.2);
+}
+.prices .packagebox .packageitem.typec {
+    box-shadow: 0px 13px 29px 0px rgba(242,109,78,0.2);
+}
+.prices .packagebox .packageitem:last-child {
+    margin-right: 0;
+}
+.prices .packagebox .packageitem .packageheader {
+    width: 380px;
+    height: 104px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.prices .packagebox .packageitem.typea .packageheader {
+    background-image: url('../image/packagea-title.png');
+}
+.prices .packagebox .packageitem.typeb .packageheader {
+    background-image: url('../image/packageb-title.png');
+}
+.prices .packagebox .packageitem.typec .packageheader {
+    background-image: url('../image/packagec-title.png');
+}
+.prices .packagebox .packageitem .packagecontent {
+    border-radius: 0 0 10px 10px;
+    padding-top: 50px;
+    height: 656px;
+}
+.prices .packagebox .packageitem.typea .packagecontent {
+    border-left: 2px solid #00B3FF;
+    border-right: 2px solid #00B3FF;
+    border-bottom: 2px solid #00B3FF;
+}
+.prices .packagebox .packageitem.typeb .packagecontent {
+    border-left: 2px solid #EBC88F;
+    border-right: 2px solid #EBC88F;
+    border-bottom: 2px solid #EBC88F;
+}
+.prices .packagebox .packageitem.typec .packagecontent {
+    border-left: 2px solid #EF49AE;
+    border-right: 2px solid #EF49AE;
+    border-bottom: 2px solid #EF49AE;
+}
+.prices .packagebox .packageitem .packagecontent .nowprice  {
+    text-align: center;
+    margin-bottom: 18px;
+}
+.prices .packagebox .packageitem .packagecontent .nowprice .yuanicon {
+    font-size: 20px;
+    color: #000;
+    line-height: 1;
+}
+.prices .packagebox .packageitem .packagecontent .nowprice .price {
+    font-size: 40px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.prices .packagebox .packageitem .packagecontent .discount {
+    text-align: center;
+    font-size: 12px;
+    line-height: 1;
+    margin-bottom: 40px;
+}
+.prices .packagebox .packageitem .packagecontent .discount .pricebefore {
+    color: #7B7B7B;
+    padding-right: 40px;
+}
+.prices .packagebox .packageitem .packagecontent .discount .discountprice {
+    color: #FF5555;
+}
+.prices .packagebox .packageitem .packagecontent .tousebtn {
+    display: block;
+    margin: 0 auto 50px;
+    width: 160px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: #fff;
+    
+    border-radius: 4px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.prices .packagebox .packageitem.typea .packagecontent .tousebtn {
+    background:linear-gradient(90deg,rgba(0,174,255,1),rgba(0,204,255,1));
+    background:-webkit-linear-gradient(0,rgba(0,174,255,1),rgba(0,204,255,1));
+}
+.prices .packagebox .packageitem.typeb .packagecontent .tousebtn {
+    background:linear-gradient(90deg,rgba(226,190,132,1),rgba(237,202,145,1));
+    background:-webkit-linear-gradient(0,rgba(226,190,132,1),rgba(237,202,145,1));
+}
+.prices .packagebox .packageitem.typec .packagecontent .tousebtn {
+    background:linear-gradient(113deg,rgba(238,66,192,1),rgba(243,118,61,1),rgba(255,171,17,1));
+    background:-webkit-linear-gradient(23deg,rgba(238,66,192,1),rgba(243,118,61,1),rgba(255,171,17,1));
+}
+.prices .packagebox .packageitem .packagecontent .packagedetail {
+    padding-left: 32px;
+}
+.prices .packagebox .packageitem .packagecontent .packagedetail .detailitemicon {
+    width: 22px;
+    height: 22px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-right: 12px;
+    float: left;
+}
+.prices .packagebox .packageitem.typea .packagecontent .packagedetail .detailitemicon {
+    background-image: url('../image/packagea-icon.png');
+}
+.prices .packagebox .packageitem.typeb .packagecontent .packagedetail .detailitemicon {
+    background-image: url('../image/packageb-icon.png');
+}
+.prices .packagebox .packageitem.typec .packagecontent .packagedetail .detailitemicon {
+    background-image: url('../image/packagec-icon.png');
+}
+.prices .packagebox .packageitem .packagecontent .packagedetail .detailinfo {
+    float: left;
+    font-size: 16px;
+    line-height: 24px;
+}
+.prices .packagebox .packageitem.typea .packagecontent .packagedetail .detailinfo {
+    margin-bottom: 44px;
+}
+.prices .packagebox .packageitem.typeb .packagecontent .packagedetail .detailinfo {
+    margin-bottom: 24px;
+}
+.prices .packagebox .packageitem.typec .packagecontent .packagedetail .detailinfo {
+    margin-bottom: 24px;
 }
