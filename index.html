@@ -544,6 +544,22 @@
         $('#price').click(function () {
             $.fn.fullpage.moveTo(7);
         })
+        function getRequest(){
+            var url=location.search;
+            var jsonList={};
+            if(url.indexOf("?")!=-1){
+                var str=url.slice(url.indexOf("?")+1);
+                var strs=str.split("&");
+                for(var i=0;i<strs.length;i++){
+                    jsonList[strs[i].split("=")[0]]=strs[i].split("=")[1];
+                }
+            }
+            return jsonList;
+        }
+        var locationSearch = getRequest();
+        if (locationSearch.page) {
+            $.fn.fullpage.moveTo(Number(locationSearch.page));
+        }
     });
 </script>
 <script>
