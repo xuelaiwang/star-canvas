@@ -1186,6 +1186,7 @@ html,body {
 .prices .packagebox .packageitem .packagecontent .discount .pricebefore {
     color: #7B7B7B;
     padding-right: 40px;
+    text-decoration: line-through;
 }
 .prices .packagebox .packageitem .packagecontent .discount .discountprice {
     color: #FF5555;
