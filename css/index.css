@@ -1134,13 +1134,13 @@ html,body {
     background-repeat: no-repeat;
 }
 .prices .packagebox .packageitem.typea .packageheader {
-    background-image: url('../image/packagea-title.png');
+    background-image: url('https://cdn.img.shangjiadao.cn/qingxiao/webindex/image/packagea-title.png');
 }
 .prices .packagebox .packageitem.typeb .packageheader {
-    background-image: url('../image/packageb-title.png');
+    background-image: url('https://cdn.img.shangjiadao.cn/qingxiao/webindex/image/packageb-title.png');
 }
 .prices .packagebox .packageitem.typec .packageheader {
-    background-image: url('../image/packagec-title.png');
+    background-image: url('https://cdn.img.shangjiadao.cn/qingxiao/webindex/image/packagec-title.png');
 }
 .prices .packagebox .packageitem .packagecontent {
     border-radius: 0 0 10px 10px;
@@ -1227,13 +1227,13 @@ html,body {
     float: left;
 }
 .prices .packagebox .packageitem.typea .packagecontent .packagedetail .detailitemicon {
-    background-image: url('../image/packagea-icon.png');
+    background-image: url('https://cdn.img.shangjiadao.cn/qingxiao/webindex/image/packagea-icon.png');
 }
 .prices .packagebox .packageitem.typeb .packagecontent .packagedetail .detailitemicon {
-    background-image: url('../image/packageb-icon.png');
+    background-image: url('https://cdn.img.shangjiadao.cn/qingxiao/webindex/image/packageb-icon.png');
 }
 .prices .packagebox .packageitem.typec .packagecontent .packagedetail .detailitemicon {
-    background-image: url('../image/packagec-icon.png');
+    background-image: url('https://cdn.img.shangjiadao.cn/qingxiao/webindex/image/packagec-icon.png');
 }
 .prices .packagebox .packageitem .packagecontent .packagedetail .detailinfo {
     float: left;
