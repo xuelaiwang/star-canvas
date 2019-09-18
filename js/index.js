@@ -1,3 +1,4 @@
+require('../css/index.less');
 $(function () {
     
     //加载svga动画
