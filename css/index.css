@@ -1113,7 +1113,7 @@ html,body {
     overflow: hidden;
     float: left;
     margin-right: 70px;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 .prices .packagebox .packageitem.typea {
     box-shadow: 0px 6px 15px 0px rgba(0,196,255,0.2);
@@ -1221,6 +1221,7 @@ html,body {
     border-radius: 4px;
     font-size: 16px;
     letter-spacing: 1px;
+    cursor: pointer;
 }
 .prices .packagebox .packageitem.typea .packagecontent .tousebtn {
     background:linear-gradient(90deg,rgba(0,174,255,1),rgba(0,204,255,1));
