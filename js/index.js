@@ -150,11 +150,11 @@ $(function () {
     });
 
     $('#about').click(function () {
-        $.fn.fullpage.moveTo(8);
-    })
-    $('#price').click(function () {
         $.fn.fullpage.moveTo(7);
     })
+    // $('#price').click(function () {
+    //     $.fn.fullpage.moveTo(7);
+    // })
     function getRequest(){
         var url=location.search;
         var jsonList={};
