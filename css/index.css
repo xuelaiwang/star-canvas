@@ -271,6 +271,9 @@ html,body {
 /* .sectionb.selected .know-list .know-item1 {
     animation: cardShow 0.5s ease-in 1 forwards;
 } */
+.section {
+    height: 100%;
+}
 .sectionb.active .common-title {
     animation: selfFadeInUp 0.8s ease-in-out forwards;
 }
